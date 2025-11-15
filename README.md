@@ -44,7 +44,6 @@ Developers receive **instant inline feedback, warnings, and automatic fixes** di
   - [Step 2 – Install the Livecheck Extension](#step-2--install-the-livecheck-extension)
   - [Step 3 – Authenticate with Quality Clouds](#step-3--authenticate-with-quality-clouds)
   - [Step 4 – Verify the Integration](#step-4--verify-the-integration)
-- [MCP Configuration Example](#-mcp-configuration-example)
 - [Need Help?](#-need-help)
 - [Summary](#-summary)
 
