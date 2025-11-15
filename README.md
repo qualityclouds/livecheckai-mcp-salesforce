@@ -1,8 +1,8 @@
 # 🌟 Quality Clouds LivecheckAI (via MCP)
 
-**Real-time Salesforce code validation and governance for AI-assisted development using the Model Context Protocol (MCP).**
+**Real-time code validation and governance for AI-assisted development using the Model Context Protocol (MCP).**
 
-This repository provides the MCP integration used by **Quality Clouds LivecheckAI**, enabling VS Code and other MCP-compatible clients to validate AI-generated Apex, LWC, and metadata code against enterprise development standards, Salesforce platform limits, and security best practices — *right from the first line of code*.
+This repository provides the MCP integration used by **Quality Clouds LivecheckAI**, enabling VS Code and other MCP-compatible to validate AI-generated Apex, LWC, and metadata code against enterprise development standards, Salesforce platform limits, and security best practices — *right from the first line of code*.
 
 ---
 
@@ -39,12 +39,6 @@ Developers receive **instant inline feedback, warnings, and automatic fixes** di
 - [MCP Configuration Example](#-mcp-configuration-example)
 - [Need Help?](#-need-help)
 - [Summary](#-summary)
-
----
-
-## 📘 Repository Description
-
-> MCP server powering Quality Clouds LivecheckAI — enterprise-grade Salesforce code validation for AI-generated content (Copilot, Claude, etc.) directly inside VS Code.
 
 ---
 
