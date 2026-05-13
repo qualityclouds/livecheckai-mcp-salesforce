@@ -148,7 +148,7 @@ Once installed, LivecheckAI will be available in your workspace.
 
 ### For New Users / Non-customers
 
-1. Sign up: https://id.qualityclouds.com/sign-up  
+1. [Sign up] (https://qualityclouds.ai/sign-up?utm_source=GitHub_Listing&utm_medium=CTA&utm_campaign=signup_free)
 2. Complete the onboarding steps.  
 3. Wait for account activation.  
 4. Return to VS Code and open the Livecheck extension.  
