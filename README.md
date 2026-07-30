@@ -1,28 +1,31 @@
-# livecheckai-mcp-salesforce
+# platform-mcp
 
-Real-time validation of AI-generated Apex, LWC, and metadata in VS Code, checked against your org's governance, security, and platform-limit rules as the code is written.
+AI code governance for ServiceNow and Salesforce, exposed as an MCP server: instance and scan visibility, real-time validation of components as they're written, and rule lookups, all callable from Cursor, Claude Code, and any MCP-compatible client.
 
 ## Install
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/download).
-2. In the Extensions panel, search for **Livecheck Quality for Salesforce** and install it.
+```bash
+claude mcp add --scope user --transport http platform https://mcp.qualityclouds.com/mcp \
+  --header "Authorization: Bearer <your-api-key>"
+```
 
 ## Authentication
 
-**Quality Clouds customers:** ask your Success Manager to enable the LivecheckAI add-on, then enable auto-update in the extension. It activates automatically.
-
-**New to Quality Clouds:** requires a Quality Clouds license. [Sign up](https://id.qualityclouds.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=livecheckai-mcp-salesforce), then authenticate in the extension's Quality Clouds settings panel.
+Requires a Quality Clouds license. Existing customers: generate an API key in the Admin Portal. New to Quality Clouds: [sign up](https://id.qualityclouds.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=platform-mcp).
 
 ## What it does
 
-| Check | What it catches |
+| Capability | What it does |
 |---|---|
-| SOQL and DML | Unsafe queries, missing bulkification, governor-limit risks |
-| Naming and metadata | Org naming conventions, metadata consistency |
-| Security | Hardcoded IDs, credential leaks, insecure patterns |
-| Architecture | Org-specific and platform-limit rule violations |
+| Instances and scans | Lists your governed instances and recent scan history, and compares instances by issue count or quality score |
+| Issues and quality posture | Issue distributions and KPIs by severity, impact area, application, or developer, with filtering for narrower questions |
+| Configuration inventory | Configuration element counts by type, creator, and application for a given scan |
+| Developer analytics | Issue and technical debt totals by developer |
+| Live validation (livecheck) | Real-time analysis of a ServiceNow or Salesforce component as it's written, returning issues against your ruleset |
+| Rules | Looks up the active Quality Clouds best practices for a given configuration element type |
+| Write-offs | Lists write-off reasons and requests a write-off for one or more issues found during a livecheck |
 
-Feedback and autofixes appear inline in VS Code as the AI assistant generates code, before a pull request exists.
+ServiceNow and Salesforce are both covered; some tools take platform-specific parameters (for example, ServiceNow rule lookups take an instance URL and severity, Salesforce lookups don't).
 
 ## Links
 
