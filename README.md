@@ -5,13 +5,12 @@ AI code governance for ServiceNow and Salesforce, exposed as an MCP server: inst
 ## Install
 
 ```bash
-claude mcp add --scope user --transport http platform https://mcp.qualityclouds.com/mcp \
-  --header "Authorization: Bearer <your-api-key>"
+claude mcp add --scope user --transport http platform https://mcp.qualityclouds.com/mcp
 ```
 
 ## Authentication
 
-Requires a Quality Clouds license. Existing customers: generate an API key in the Admin Portal. New to Quality Clouds: [sign up](https://id.qualityclouds.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=platform-mcp).
+OAuth. Sign in via browser on first connection. Requires a Quality Clouds license. New to Quality Clouds: [sign up](https://id.qualityclouds.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=platform-mcp).
 
 ## What it does
 
