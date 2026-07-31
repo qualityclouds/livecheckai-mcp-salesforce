@@ -16,11 +16,11 @@ OAuth. Sign in via browser on first connection. Requires a Quality Clouds licens
 
 | Capability | What it does |
 |---|---|
+| Live validation (livecheck) | Real-time analysis of a ServiceNow or Salesforce component as it's written, returning issues against your ruleset |
 | Instances and scans | Lists your governed instances and recent scan history, and compares instances by issue count or quality score |
 | Issues and quality posture | Issue distributions and KPIs by severity, impact area, application, or developer, with filtering for narrower questions |
 | Configuration inventory | Configuration element counts by type, creator, and application for a given scan |
 | Developer analytics | Issue and technical debt totals by developer |
-| Live validation (livecheck) | Real-time analysis of a ServiceNow or Salesforce component as it's written, returning issues against your ruleset |
 | Rules | Looks up the active Quality Clouds best practices for a given configuration element type |
 | Write-offs | Lists write-off reasons and requests a write-off for one or more issues found during a livecheck |
 
