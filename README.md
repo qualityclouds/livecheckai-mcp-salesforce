@@ -4,9 +4,62 @@ AI code governance for ServiceNow and Salesforce, exposed as an MCP server: inst
 
 ## Install
 
+The server is named **Quality Clouds Platform** and runs over HTTP at `https://mcp.qualityclouds.com/mcp`.
+
+### Claude Code
+
 ```bash
-claude mcp add --scope user --transport http platform https://mcp.qualityclouds.com/mcp
+claude mcp add --scope user --transport http quality-clouds-platform https://mcp.qualityclouds.com/mcp
 ```
+
+(The CLI does not accept spaces in server names, so the name is kebab-cased here.)
+
+### Cursor
+
+Add to `~/.cursor/mcp.json` (global) or `.cursor/mcp.json` in your project:
+
+```json
+{
+  "mcpServers": {
+    "Quality Clouds Platform": {
+      "url": "https://mcp.qualityclouds.com/mcp"
+    }
+  }
+}
+```
+
+### VS Code (GitHub Copilot)
+
+Add to `.vscode/mcp.json` in your project, or to your user MCP configuration:
+
+```json
+{
+  "servers": {
+    "Quality Clouds Platform": {
+      "type": "http",
+      "url": "https://mcp.qualityclouds.com/mcp"
+    }
+  }
+}
+```
+
+### Windsurf
+
+Add to `~/.codeium/windsurf/mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "Quality Clouds Platform": {
+      "serverUrl": "https://mcp.qualityclouds.com/mcp"
+    }
+  }
+}
+```
+
+### Any other MCP client
+
+Point the client at `https://mcp.qualityclouds.com/mcp` using the HTTP (streamable) transport and name the server Quality Clouds Platform.
 
 ## Authentication
 
